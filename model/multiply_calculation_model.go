@@ -9,6 +9,6 @@ func NewMultipleCalculation(firstArgument int, secondArgument int) *MultipleCalc
 	return &MultipleCalculation{FirstArgument: firstArgument, SecondArgument: secondArgument}
 }
 
-func (c MultipleCalculation) PrintResult() int {
+func (c *MultipleCalculation) PrintResult() int {
 	return c.FirstArgument * c.SecondArgument
 }
